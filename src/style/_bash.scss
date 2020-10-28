@@ -1,0 +1,71 @@
+$wordsColor: #333 !default;
+$wordsFont: 14px/1.5  'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif !default;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font: $wordsFont;
+  color: $wordsColor;
+  background-color: #253647;
+  width: 100%;
+  height: 100%;
+  // 鼠标拖动时，默认不选中文本
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  min-height: 768px;
+  min-width: 1366px;
+}
+html {
+  overflow: hidden;
+  position: relative;
+}
+body {
+  &::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+  overflow: hidden;
+  margin-right: 0;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// 图片垂直居中：div.vertical-img>img
+.vertical-img, .vertical-img img {
+  vertical-align: middle;
+}
+
+// hst组件样式
+.hst-button {
+  text-align: center;
+  font-style: normal;
+  cursor: pointer;
+  zoom: 1;
+  outline-width: medium;
+  outline-color: inherit;
+  border-radius: 5px;
+  color: #fff;
+  border: #2BA77D 0px solid;
+  background-color: #2BA77D;
+  outline: none;
+  &:hover {
+    background-color: #30B387;
+  }
+}

@@ -1,0 +1,12 @@
+// ces项目样式 配置文件
+
+// 全局布局样式申明
+$headerHeight: 54px;
+$footerHeight: 40px;
+$leftSidebarWidth: 200px;
+$rightSidebarWidth: 286px;
+$ctxHeight: calc(100vh - #{$headerHeight} - #{$footerHeight});
+$headerBgcolor: #3C81CE;
+$sidebarBgcolor: #253647;
+$footerBgcolor: #1D2A36;
+$ctxBgcolor: #2F4256;

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="./static/imgs/favicon.ico" />
+    <!-- 3des -->
+    <script type="text/javascript" src="./static/publish/3des/base64.js"></script>
+    <script type="text/javascript" src="./static/publish/3des/3des.js"></script>
+    <!-- div容器宽高变化监听 -->
+    <script type="text/javascript" src="./static/eleresize.js"></script>
+    <!-- 浏览器兼容性提示 -->
+    <script type="text/javascript" src="./static/browser-info.js?sid=20180922"></script>
+    <!-- 语言文件 -->
+    <script type="text/javascript" src="./static/lang/en-us.js?sid=20180921"></script>
+    <script type="text/javascript" src="./static/lang/zh-cn.js?sid=20180921"></script>
+    <script type="text/javascript" src="./static/lang/zh-tw.js?sid=20180921"></script>
+    <!-- 全局配置文件 -->
+    <script type="text/javascript" src="./static/ces-static-config.js?sid=20180902"></script>
+    <script type="text/javascript">
+      // 禁用上下左右键
+      document.onkeydown = function (e) {
+        e = e || event
+        if (e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40) {
+          return false
+        }
+      }
+      window.onload = function () {
+        // 判断浏览器兼容性支持
+        if ((IEVersion() > -1 && IEVersion() < 10) || !window.WebSocket || !(window.Storage && window.localStorage && window.localStorage instanceof Storage)) {
+          window.location.href = './static/update-browser.html?sid=20180922'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

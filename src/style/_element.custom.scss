@@ -1,0 +1,69 @@
+.el-menu, .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
+  background-color: #253647 !important;
+  color: #C5D4E5 !important;
+}
+.el-submenu__title {
+  color: #C5D4E5 !important;
+}
+.el-submenu__title:hover, .el-submenu:hover .el-menu-item:hover  {
+  background-color: #2BA77D !important;
+  span {
+    color: #C5D4E5;
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+.el-menu {
+  border-right: solid 0px #e6e6e6 !important;
+}
+.el-menu-item.is-active {
+  background-color: #2BA77D;
+  color: #fff !important;
+}
+.el-menu-item {
+  color: #C5D4E5 !important;
+  &:hover {
+    color: #FFF !important;
+  }
+  &:active, &:visitied {
+    background-color: #2BA77D !important;
+  }
+}
+
+.el-menu-item:hover, .el-menu-item:focus {
+  outline: none;
+  background-color: #2BA77D !important;
+}
+
+.el-input__inner {
+  background-color: #253647 !important;
+  border: 1px solid #253647 !important;
+}
+// 修改placeholder的颜色
+input {
+  &:-webkit-input-placeholde, &:-moz-placeholde, &:-moz-placeholder, &:-ms-input-placeholder {
+    color: red !important;
+  }
+}
+.el-input {
+  height: 30px !important;
+}
+
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+
+.el-scrollbar__bar.is-horizontal .el-scrollbar__thumb{
+  width: 0 !important;
+}
+.el-slider__bar {
+  background-color: #3fb072 !important;
+  height: 5px !important;
+}
+
+.el-slider__button {
+  border-color: #3fb072 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
